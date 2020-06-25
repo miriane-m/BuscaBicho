@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-home" %}
+
+    <title>BuscaBicho</title>
+
+    {% block styles %}
+        <link rel="stylesheet" href="styles/home.css">
+    {% endblock styles %}
+
+
+    {% block content %}
+        <div class="content">
+            <header>
+                <h1>Meu Pet Sumiu!</h1>
+                <div class="card">
+                    <img src="/icones/logo.png" width="50" heigth="50" alt="Logomarca">
+                    <a href="casos-solucionados"><span><h3>Veja os casos solucionados</h3></span></a>
+                </div>
+            </header>
+
+            <main>            
+                <div>
+                    <div class="card1">
+                        <h3>Seja um detetive voluntário</h3>
+                        <a href="casos-ativos"><span></span><strong>Entrar</strong></a>
+                    </div>
+                    
+                    <div class="card1">
+                        <h3>Informe que um animal foi encontrado</h3>
+                        <a href="achados"><span></span><strong>Entrar</strong></a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Informe que um animal desapareceu</h3>
+                        <a href="perdidos"><span></span><strong>Entrar</strong></a>
+                    </div>  
+                </div>
+            </main>        
+        </div>
+    {% endblock content %}
+    

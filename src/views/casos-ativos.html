@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-casos-ativos" %}
+
+
+{% block title %}
+<title>Casos ativos</title>
+{% endblock title %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/casos-ativos.css">
+{% endblock styles %}
+
+
+{% block content %}
+{% include "partials/page-header.html" %}
+
+<main>
+    <h4>
+        <strong>3 casos</strong>
+        ativos
+    </h4>
+
+    <div class="cards">
+        <div class="card">
+            <img src="/icones/gato.webp"
+                alt="Gato">
+            <h1>Atende pelo nome de Velcro</h1>
+            <h3>Sumido desde 19 de junho de 2020</h3>
+            <p>
+                Visto por último nos arredores do Nº 260,
+                Guilherme Gemballa, Jardim América,
+                Chapecó, Santa Catarina        
+            </p>
+        </div>
+        <div class="card">
+            <img src="/icones/porquinho.webp"
+                alt="Porquinho da Índia">
+            <h1>Atende pelo nome de Nóz</h1>
+            <h3>Sumida desde 02 de maio de 2020</h3>
+            <p>
+                Visto por último nos arredores do Nº 111,
+                Índio Condá, Bela Vista,
+                Chapecó, Santa Catarina
+            </p>
+        </div>
+        <div class="card">
+            <img src="/icones/cachorro.webp"
+                alt="Cachorro">
+            <h1>Atende pelo nome de Rover</h1>
+            <h3>Sumido desde 14 de abril de 2020</h3>
+            <p>
+                Visto por último nos arredores do Nº 487,
+                Augusto Armindo, Centro,
+                Chapecó, Santa Catarina
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock content %}

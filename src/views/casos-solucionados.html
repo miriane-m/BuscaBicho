@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-casos-solucionados" %}
+
+
+{% block title %}
+<title>Casos solucionados</title>
+{% endblock title %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/casos-solucionados.css">
+{% endblock styles %}
+
+
+{% block content %}
+{% include "partials/page-header.html" %}
+
+<main>
+    <h4>
+        <strong>3 casos</strong>
+        solucionados
+    </h4>
+
+    <div class="cards">
+        <div class="card">
+            <img src="/icones/achado.jpg"
+                alt="Cachorro">
+            <h1>Bola de Neve</h1>
+            <h3>Voltou pra casa em 02 de junho de 2020</h3>
+            <p>
+                Foi encotrada por detetives voluntários
+                que fizeram uma rede de busca pelo bairro           
+            </p>
+        </div>
+        <div class="card">
+            <img src="/icones/encontrado.webp"
+                alt="Gato">
+            <h1>Hasckal</h1>
+            <h3>Voltou pra casa em 09 de junho de 2020</h3>
+            <p>
+                Foi encontrado do outro lado da cidade
+                por um amigo da família que avisou a dona
+                onde ele estava
+            </p>
+        </div>
+        <div class="card">
+            <img src="/icones/retornado.jpg"
+                alt="Porquinho da Índia">
+            <h1>Pluma</h1>
+            <h3>Voltou pra casa em 18 de junho de 2020</h3>
+            <p>
+                Foi encontrada por uma detetive voluntária
+                que realizou uma busca em um terreno baldio
+                próximo ao local do desaparecimento
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock content %}

@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+
+{% set pageId = "page-achados" %}
+
+
+{% block title %}
+<title>BuscaBicho</title>
+{% endblock title %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="styles/achados.css">
+{% endblock styles %}
+
+
+{% block content %}
+{% include "partials/page-header.html" %}
+<form action="">
+
+    <h1>Informe de animal encontrado</h1>
+
+    <fieldset>
+        <legend>
+            <h2>Animal ancontrado</h2>
+            <span>Selecione uma categoria</span>
+        </legend>
+
+        <div class="items-grid">
+            <li data-id="1">
+                <img src="/icones/caes.jpg" alt="Cães">
+                <span>Cães</span>
+            </li>
+            <li data-id="2">
+                <img src="/icones/gatos.jpg" alt="Gatos">
+                <span>Gatos</span>
+            </li>
+            <li data-id="3">
+                <img src="/icones/outros.jpg" alt="Outros">
+                <span>Outros</span>
+            </li>
+        </div>
+
+        <input type="hidden" name="items">
+
+    </fieldset>
+    
+    <fieldset>
+        <legend>
+            <h2>Descrição de solução de caso de desaparecimento</h2>
+        </legend>
+
+        <div class="field-group">
+            <div class="field">
+                <label for="name">Data em que foi encontrado</label>
+                <input type="text" name="name" required="required">
+            </div>
+            <div class="field">
+                <laber for="name">Como foi encontrado</laber>
+                <input type="text" name="name" required="required">
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="address">Descrição das características do animal</label>
+                <input type="text" name="address" required>
+            </div>
+            <div class="field">
+                <label for="address2">Local em que foi encontrado</label>
+                <input type="text" name="address2" required>
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="name">Onde o animal está agora?</label>
+                <input type="text" name="name" required="required">
+            </div>
+            <div class="field">
+                <laber for="name">Foto do animal</laber>
+                <input 
+                type="url" 
+                name="image" 
+                placeholder="http://"
+                required="required">
+            </div>
+        </div>
+    </fieldset>
+
+    <button type="submit" onclick="clicou()">Publique a solução do caso</button>
+    
+</form>
+{% endblock content %}
+
+{% block scripts %}
+<script src="/scripts/achados.js"></script>
+{% endblock scripts %}

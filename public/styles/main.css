@@ -1,0 +1,29 @@
+:root{
+    --title-color: black;
+    --primary-color: #828A97;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Saira Stencil One', cursive;
+    font-family: 'Sarabun', sans-serif;
+}
+
+body{
+    background: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Saira Stencil One', cursive;
+    color: var(--title-color);
+}
